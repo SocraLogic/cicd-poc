@@ -28,6 +28,12 @@ jobs:
 
       - name: Try get the env
         run: env
+
+      - name: Check aws version
+        run: aws --version
+
+      - name: Check sam version
+        run: sam --version
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
